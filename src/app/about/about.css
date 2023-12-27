@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 60px 75px 75px 75px 60px 75px;
+    justify-content: center;
+    align-items: stretch;
+    width: 225px;
+    height: 225px;
+  }
+  
