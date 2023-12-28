@@ -23,7 +23,7 @@ class CheckUser extends Component {
         <button value={userName} className="bg-slate-400 p-2 rounded-xl" onClick={handleClick}>
           {check ? <Link href="/about">Submit</Link> : "Submit"}
         </button>
-        {check ? <p>Click Again</p> : ""}
+        {check ? <p>Click until you enter the game</p> : ""}
       </div>
     );
   }
