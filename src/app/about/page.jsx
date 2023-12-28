@@ -60,7 +60,7 @@ class GameBoard extends Component {
     if (vsComputer === true && turn === true) {
       for (let f in lines) {
         const [a, b, c] = lines[f];
-   
+  
 
         if (
           squares[a] === null &&
@@ -95,6 +95,7 @@ class GameBoard extends Component {
       }
       for (let y in lines) {
         const [a, b, c] = lines[y];
+        console.log(lines[y])
         if (
           squares[b] === value &&
           squares[c] === value &&
