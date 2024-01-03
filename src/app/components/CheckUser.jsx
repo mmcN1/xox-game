@@ -20,10 +20,11 @@ class CheckUser extends Component {
           className="p-2 rounded-xl m-1 text-left"
           onChange={handleChange}
         />
-        <button value={userName} className="bg-slate-400 p-2 rounded-xl" onClick={handleClick}>
-          {check ? <Link href="/about">Submit</Link> : "Submit"}
+        <button value={userName} className="bg-slate-400 p-2 rounded-xl" >
+        <Link href={userName.length >=2 ? "/about" : '/'} onClick={handleClick}>Login</Link>
+
         </button>
-        {check ? <p>Click until you enter the game</p> : ""}
+        
       </div>
     );
   }
